@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+export TERMINAL=xfce4-terminal
+
 autoload -U compinit
 compinit
 
@@ -36,4 +38,6 @@ bindkey "^[[F" end-of-line
 bindkey "^[[3~" delete-char
 
 # Temp
-alias ssh_to_hpc="ssh djameson@eecs-hpc-1.mines.edu"
+alias dock="xrandr --output DP-1-2 --right-of eDP-1 --auto && xrandr --output DP-1-3 --left-of eDP-1 --auto"
+alias undock="xrandr --output DP-1-2 --off && xrandr --output DP-1-3 --off"
+alias logconvert="/home/pcadm1n/workspace/CommonEmbedded/Eric/Main/build.tools/Tools/logconvert/bin/tools/logconvert"
