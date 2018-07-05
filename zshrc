@@ -36,4 +36,3 @@ bindkey -M vicmd "j" down-line-or-beginning-search
 # Temp
 alias dock="xrandr --output DP-1-2 --right-of eDP-1 --auto && xrandr --output DP-1-3 --left-of eDP-1 --auto"
 alias undock="xrandr --output DP-1-2 --off && xrandr --output DP-1-3 --off"
-alias logPull="/home/pcadm1n/getLog.sh"
