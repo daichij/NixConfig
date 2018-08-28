@@ -159,6 +159,9 @@ bar {
 }
 
 exec compton -GCb
+exec xrandr --dpi 200
 exec redshift &
 exec --no-startup-id xautolock -time 5 -locker '/home/daichij/NixConfig/lock.sh'
+exec i3-sensible-terminal
+exec chromium &
 exec ~/.fehbg &

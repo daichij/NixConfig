@@ -33,3 +33,6 @@ bindkey -M vicmd "j" down-line-or-beginning-search
 
 # Temp
 alias ssh_to_hpc="ssh djameson@eecs-hpc-1.mines.edu"
+PI="10.0.0.6"
+
+alias lisp="rlwrap sbcl"
