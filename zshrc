@@ -36,3 +36,11 @@ alias ssh_to_hpc="ssh djameson@eecs-hpc-1.mines.edu"
 PI="10.0.0.6"
 
 alias lisp="rlwrap sbcl"
+
+dlatex() {
+    file=$1
+    out_file=${file%.tex}.pdf
+    mkdir build
+    pdflatex --halt-on-error -output-directory=build $file
+    ln -s build/$out_file $out_file
+}
