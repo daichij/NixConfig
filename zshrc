@@ -35,16 +35,18 @@ bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 bindkey "^[[3~" delete-char
 
+if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+    eval `ssh-agent`
+    ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+fi
+export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
+ssh-add -l | grep "The agent has no identities" && ssh-agent
+
 # Temp
 alias ssh_to_hpc="ssh djameson@eecs-hpc-1.mines.edu"
 PI="10.0.0.6"
 
 alias lisp="rlwrap sbcl"
 
-dlatex() {
-    file=$1
-    out_file=${file%.tex}.pdf
-    mkdir build
-    pdflatex --halt-on-error -output-directory=build $file
-    ln -s build/$out_file $out_file
-}
+alias dlatex="pdflatex --halt-on-error"
+alias zath="zathura"
