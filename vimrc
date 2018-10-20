@@ -73,3 +73,5 @@ inoremap # X#
 
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType jade setlocal shiftwidth=2 tabstop=2
+
+set spell spelllang=en_us
