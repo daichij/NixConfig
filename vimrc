@@ -84,9 +84,9 @@ endif
 syntax enable
 colorscheme monokai
 
-set shiftwidth=4
+set shiftwidth=3
 "set tabstop=8
-set tabstop=4
+set tabstop=3
 set expandtab
 set smarttab
 
@@ -103,8 +103,6 @@ set textwidth=80
 
 set hlsearch
 set incsearch
-
-set mouse=a
 
 inoremap <S-Tab> <C-d>
 
