@@ -17,11 +17,14 @@ set autoindent
 set smartindent
 
 set number
+set relativenumber
 
 set ruler
 
 set colorcolumn=80
 set textwidth=80
+
+set hlsearch
 
 inoremap <S-Tab> <C-d>
 
