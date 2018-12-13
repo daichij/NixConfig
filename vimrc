@@ -66,6 +66,8 @@ set ruler
 set colorcolumn=80
 set textwidth=80
 
+set hlsearch
+
 inoremap <S-Tab> <C-d>
 
 " This is to prevent python from untabbing when typing a '#'
