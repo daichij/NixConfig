@@ -21,6 +21,7 @@ set number
 set ruler
 
 set colorcolumn=80
+set textwidth=80
 
 inoremap <S-Tab> <C-d>
 
