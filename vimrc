@@ -22,6 +22,8 @@ Plugin 'rcabralc/monokai.vim'
 " Language Support
 Plugin 'leafgarland/typescript-vim'
 
+Plugin 'ctrlpvim/ctrlp.vim'
+
 " Language Support
 Plugin 'leafgarland/typescript-vim'
 
@@ -47,16 +49,7 @@ let g:rainbow_active = 1
 map <C-n> :NERDTreeToggle<CR>
 
 " close vim if only NERDTree is open
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-let g:NERDTreeWinSize=30
-let g:NERDTreeIgnore=[
-    \'node_modules$[[dir]]'
-    \]
-
-autocmd vimenter * NERDTree
-
-map <C-Tab> :tabn<CR>
-map <C-S-Tab> :tabp<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 let g:NERDTreeWinSize=30
 let g:NERDTreeIgnore=[
@@ -96,9 +89,9 @@ endif
 syntax enable
 colorscheme monokai
 
-set shiftwidth=3
+set shiftwidth=4
 "set tabstop=8
-set tabstop=3
+set tabstop=4
 set expandtab
 set smarttab
 
@@ -121,3 +114,4 @@ inoremap <S-Tab> <C-d>
 " This is to prevent python from untabbing when typing a '#'
 inoremap # X#
 
+autocmd BufNewFile,BufRead *.cpp,*.h,*.hpp setlocal shiftwidth=3 tabstop=3
