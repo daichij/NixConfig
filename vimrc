@@ -22,6 +22,9 @@ Plugin 'rcabralc/monokai.vim'
 " Language Support
 Plugin 'leafgarland/typescript-vim'
 
+" Language Support
+Plugin 'leafgarland/typescript-vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -44,7 +47,16 @@ let g:rainbow_active = 1
 map <C-n> :NERDTreeToggle<CR>
 
 " close vim if only NERDTree is open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let g:NERDTreeWinSize=30
+let g:NERDTreeIgnore=[
+    \'node_modules$[[dir]]'
+    \]
+
+autocmd vimenter * NERDTree
+
+map <C-Tab> :tabn<CR>
+map <C-S-Tab> :tabp<CR>
 
 let g:NERDTreeWinSize=30
 let g:NERDTreeIgnore=[
