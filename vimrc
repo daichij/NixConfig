@@ -40,7 +40,7 @@ let g:NERDTreeIgnore=[
     \'node_modules$[[dir]]'
     \]
 
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 
 map <C-Tab> :tabn<CR>
 map <C-S-Tab> :tabp<CR>
