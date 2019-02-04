@@ -37,6 +37,13 @@ bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 bindkey "^[[3~" delete-char
 
+if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+    eval `ssh-agent`
+    ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+fi
+export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
+ssh-add -l | grep "The agent has no identities" && ssh-agent
+
 # Temp
 alias dock="xrandr --output DP-1-2 --right-of eDP-1 --auto && xrandr --output DP-1-3 --left-of eDP-1 --auto"
 alias undock="xrandr --output DP-1-2 --off && xrandr --output DP-1-3 --off"

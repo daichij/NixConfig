@@ -109,4 +109,4 @@ inoremap <S-Tab> <C-d>
 " This is to prevent python from untabbing when typing a '#'
 inoremap # X#
 
-autocmd BufNewFile,BufRead *.cpp,*.h,*.hpp setlocal shiftwidth=3 tabstop=3
+autocmd BufNewFile,BufRead *.cpp,*.h,*.hpp,*.json setlocal shiftwidth=3 tabstop=3
