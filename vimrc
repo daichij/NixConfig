@@ -46,7 +46,7 @@ map <C-n> :NERDTreeToggle<CR>
 " close vim if only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-let g:NERDTreeWinSize=30
+let g:NERDTreeWinSize=50
 let g:NERDTreeIgnore=[
     \'node_modules$[[dir]]'
     \]
@@ -65,9 +65,7 @@ let g:ale_lint_on_save = 1
 let g:ctrlp_cmd = 'CtrlP getcwd()'
 let g:ctrlp_follow_symlinks = 1
 
-let g:ctrlp_custom_ignore = {
-    \ 'dir': '(node_modules|build|build.tools|dist)',
-    \ }
+let g:ctrlp_custom_ignore = 'bower_components\|node_modules\|build\|build.tools\|dist'
 
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("v")': ['<cr>', '<RightMouse>'],
