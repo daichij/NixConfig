@@ -1,0 +1,2 @@
+alias lisp="rlwrap sbcl"
+alias ssh_to_hpc="ssh djameson@eecs-hpc-1.mines.edu"
