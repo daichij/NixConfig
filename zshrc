@@ -17,6 +17,7 @@ export SAVEHIST=$HISTSIZE
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
 
+alias ls="ls --color=auto"
 alias ll="ls -al"
 alias llc="clear && ls -al"
 alias brightnessto="sudo tee /sys/class/backlight/intel_backlight/brightness <<< "
@@ -43,10 +44,5 @@ export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ssh-add -l | grep "The agent has no identities" && ssh-agent
 
 # Temp
-alias ssh_to_hpc="ssh djameson@eecs-hpc-1.mines.edu"
-PI="10.0.0.6"
-
-alias lisp="rlwrap sbcl"
-
 alias dlatex="pdflatex --halt-on-error"
 alias zath="zathura"
