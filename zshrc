@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+export TERMINAL=xfce4-terminal
+
 autoload -U compinit
 compinit
 
@@ -43,6 +45,5 @@ fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ssh-add -l | grep "The agent has no identities" && ssh-agent
 
-# Temp
 alias dlatex="pdflatex --halt-on-error"
 alias zath="zathura"

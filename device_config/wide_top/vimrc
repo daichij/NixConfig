@@ -1,0 +1,3 @@
+
+" Who even uses 3 spaces?
+autocmd BufNewFile,BufRead *.cpp,*.h,*.hpp,*.json setlocal shiftwidth=3 tabstop=3
