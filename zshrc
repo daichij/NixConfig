@@ -48,6 +48,7 @@ ssh-add -l | grep "The agent has no identities" && ssh-agent
 alias dock="xrandr --output DP-1-2 --right-of eDP-1 --auto && xrandr --output DP-1-3 --left-of eDP-1 --auto"
 alias undock="xrandr --output DP-1-2 --off && xrandr --output DP-1-3 --off"
 alias logPull="/home/pcadm1n/getLog.sh"
-alias logconvert="/home/pcadm1n/workspace/CommonEmbedded/Eric/Main/build.tools/Tools/logconvert/bin/tools/logconvert"
+alias logconvert="/home/pcadm1n/workspace/CommonEmbedded/Eric/Main/build.tools/Common/Tools/logconvert/bin/tools/logconvert"
 alias dlogparser="/home/pcadm1n/workspace/CommonEmbedded/Eric/Main/build.tools/Common/Tools/DlogParser/bin/tools/dlogparser"
 alias fixMyStuff="xrandr --output eDP-1 --mode 1920x1080 && dock && feh --bg-fill ~/NixConfig/powerlines.png"
+alias displaylink="sudo systemctl start displaylink.service"

@@ -1,0 +1,5 @@
+# A gitignore file for all of the TFS repos I use
+Common
+build/
+build.ut/
+build.tools/

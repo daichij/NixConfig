@@ -97,10 +97,12 @@ set relativenumber
 set ruler
 
 set colorcolumn=80
-set textwidth=80
+"set textwidth=80
 
 set hlsearch
 set incsearch
+
+set spell spelllang=en_us
 
 inoremap <S-Tab> <C-d>
 
