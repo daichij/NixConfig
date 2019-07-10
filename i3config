@@ -164,5 +164,5 @@ exec xrandr --output eDP-1 --mode 1920x1080
 exec redshift &
 exec --no-startup-id xautolock -time 5 -locker '/home/daichij/NixConfig/lock.sh'
 exec i3-sensible-terminal
-exec chromium &
+exec firefox &
 exec ~/.fehbg &
