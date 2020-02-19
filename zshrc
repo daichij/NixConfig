@@ -52,3 +52,9 @@ alias logconvert="/home/pcadm1n/workspace/CommonEmbedded/Eric/Main/build.tools/C
 alias dlogparser="/home/pcadm1n/workspace/CommonEmbedded/Eric/Main/build.tools/Common/Tools/DlogParser/bin/tools/dlogparser"
 alias fixMyStuff="xrandr --output eDP-1 --mode 1920x1080 && dock && feh --bg-fill ~/NixConfig/powerlines.png"
 alias displaylink="sudo systemctl start displaylink.service"
+alias grd="git rebase dev"
+alias gcdrm="git checkout dev && git rebase master"
+alias gits="git status"
+alias gitd="git diff"
+
+export PATH=$PATH:~/bin
