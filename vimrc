@@ -22,6 +22,9 @@ Plugin 'rcabralc/monokai.vim'
 " Language Support
 Plugin 'leafgarland/typescript-vim'
 
+" Md previewer
+Plugin 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -77,6 +80,8 @@ let g:monokai_colorscheme#output_srgb = 0
 if !has('gui_running')
     let g:monokai_colorscheme#transparent_background = 1
 endif
+
+let g:mkdp_auto_start = 1
 
 " Syntax highlighting
 syntax enable
