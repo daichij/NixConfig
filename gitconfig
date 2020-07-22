@@ -1,6 +1,6 @@
 [user]
 	name = daichij
-	email = djameson@mines.edu
+	email = daichi@tinychaitea.com
 [credential]
 	helper = cache --timeout 3600
 [diff]
